@@ -1,0 +1,343 @@
+
+<!-- saved from url=(0075)file:///Users/claudiadsilva/Desktop/Spring%202020/MWD/Assignment2/main.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+		<meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+		<title>Ultra Corporation</title>
+		<link rel="stylesheet" type="text/css" href="./Ultra Corporation-1_files/design.css"> 
+	</head>
+	<body>
+	<style>
+			@media (max-width:661px) and (min-width:0){
+			.container{
+				/*phone*/
+				display:grid;
+				grid-template-columns:1fr !important;
+				grid-auto-rows: minmax(200px, auto);
+				justify-items: stretch;
+				align-items: stretch;
+				margin:0;
+				padding:0;
+				xbackground-image: linear-gradient(to bottom right, mediumpurple, grey);
+			}
+			#logo{
+				padding: auto;
+				width: 100%;
+				align-self: center;
+				height: 10%;
+				xtransform: rotate3d(0, 1, 0, 30deg);
+				display:none;
+			}
+			
+			  .menu a:not(:first-child) {display: none;}
+			  .menu a.icon {
+			    float: right;
+			    display: block;
+			    color: black;
+			  }
+			
+			.main{
+		background-image: linear-gradient(to bottom right,plum, lavender);
+		text-align: center;
+		}
+
+	}
+
+		@media  (max-width: 661px) and (min-width:0){
+			  .menu.responsive {position: relative;}
+			  .menu.responsive .icon {
+			    position: absolute;
+			    right: 0;
+			    top: 0;
+			  }
+			  .menu.responsive a {
+			    float: none;
+			    display: block;
+			    text-align: left;
+			  }
+	}
+		/*
+		@media only screen and (max-width:991px) and (min-width: 440px){
+			.container{
+				display:grid;
+				grid-template-columns:repeat(1, 1fr 3fr);
+			}
+			div{
+				background-color: blue;
+		}
+		*/
+	@media (min-width: 600px)
+	{/*laptop
+		*/
+		.container{
+			display:grid;
+			grid-template-columns: repeat(1, 1fr 4fr 1fr);
+			xgrid-gap: 5px;
+			grid-auto-rows: minmax(200px, auto);
+			justify-items: stretch;
+			align-items: stretch;
+			margin:0;
+			padding:0;
+			}
+		#header{
+			background-image: url("build.jpeg");
+			background-color: #cccccc;
+  			xheight: 500px;
+			background-position: center;
+			background-repeat: repeat;
+			background-size: cover;
+			position: relative;
+			grid-column: 2/4;
+			}
+		#logo {
+			align-self: center;
+			transform: rotateX(40deg);
+			transform: rotateY(50deg);
+			transform: rotateZ(10deg);
+			}
+		@keyframes rotation {
+		  	from {
+		    	transform: rotate(0deg);
+		  	}
+		  	to {
+		    	transform: rotate(360deg);
+		  	}
+		}
+		.menu a{text-decoration: none;
+		color:purple;
+		text-align: center;
+		font-size: 2vw; }
+		.main:hover {
+		background-image: linear-gradient(to bottom right,wheat, cornsilk);
+		background-size: cover;
+		text-align: center;
+		text-transform: all;
+		font-size: 10px;
+		xtransform: scale(1.1);
+		}
+		.menu {
+			background-color:pink;
+			grid-column: 1/4;
+			 text-align: center;
+		  padding: 0 16px;
+		  text-decoration: none;
+		  font-size: 17px;
+			}
+		.main{
+		
+		background-image: url(build1.jpg);
+		background-size: cover;
+		text-align: center;
+
+		}
+		.pic:hover {
+  transform: scale(1.5);
+  align-items: center;
+}
+.pic3:hover {
+transform: scale(1.5);
+}
+
+		
+	}
+
+	.container div{
+		xbackground-color: pink;
+		font-size: 20px;
+		}
+	h1{
+		color: black;
+		font-family: Akkurat,Times New Roman;
+		margin: 10px;
+		text-shadow: 2px 2px 5px white;
+		padding: 10px;
+		}
+	h2{
+		text-shadow: 2px 2px 5px plum;
+		}
+	h3{
+		color: "Helvetica";
+		text-shadow: 1px 1px  black;
+		}
+	p{
+		font-size: 18px;
+	}
+	
+	.uc {
+				
+  		animation: rotation 8s infinite linear;
+		}
+	.xpic{
+		xgrid-column: 1/4;
+		background-position: center;
+	    background-repeat: repeat;
+	    background-size: cover;
+	    width: 100%;
+	    height:auto;
+	}
+
+    .menu ul{
+		text-align:left;
+		list-style-type: none;
+		}
+	.menu li{
+		list-style-type: none;
+		}
+
+	#header{
+		background-image: url("build.jpg");
+		xbackground-color: #cccccc;
+	    xheight: 300px;
+	    text-align: center;
+	    background-position: center;
+	    background-repeat: repeat;
+	    background-size: cover;
+	    align-items: stretch;
+	    position: relative;
+	    margin:0;
+	    padding:0;
+	    xtransform: rotate3d(0, 1, 0, 30deg);
+	    xgrid-column: 2/4;
+		}
+
+
+	div{align-self: center;}
+
+.menu {
+  overflow: hidden;
+}
+
+.menu a {
+  float: left;
+  display: block;
+  padding: 14px 16px;
+  font-size: 17px;
+  text-decoration: none;
+  color:purple;
+  text-align: center;
+}
+
+.menu a:hover {
+  background-color: purple;
+  color: black;
+}
+
+.menu a.active {
+  background-color: lavender;
+  color: black;
+}
+
+.menu .icon {
+  display: none ;
+   background-image: url("hl.jpg");
+   color:white;
+}
+.a,.b{
+	display:none;
+}
+
+	</style>  
+<div class="container">
+		
+				<div id="logo">
+					<img class="uc" src="./Ultra Corporation-1_files/uc.jpeg" width="100%">	
+				</div>
+
+				<div id="header">
+				
+					<h1 style="font-size:10vw"> <b>Ultra</b> Corporation</h1>
+				</div>
+				
+				<!--<div class="nav-button">
+					<div id="h_hamburger_button">
+						<div id="h_hamburger_icon"> 
+							<span></span> 
+							<span></span> 
+							<span></span> 
+							<span></span> 
+						</div>
+					</div>
+				</div>!-->
+				<div class="menu" id="nav">
+				
+							<a href="file:///Users/claudiadsilva/Desktop/Spring%202020/MWD/Assignment2/main.html" class="active">Home</a>
+					
+							<a href="https://www.ft.com/companies">News</a>
+						
+							<a href="file:///Users/claudiadsilva/Desktop/Spring%202020/MWD/Assignment2/ref.html">About</a>
+		
+							<a href="https://www.google.com/maps/" target="_blank">Visit</a>
+
+							<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+							    
+							 	<i class="fa fa-bars"></i>
+							</a>
+	
+				</div>
+				<div class="a">
+				</div>
+				<div class="b">
+				</div>
+	<script>
+		function myFunction() {
+  var x = document.getElementById("nav");
+  if (x.className === "menu") {
+    x.className += " responsive";
+  } else {
+    x.className = "menu";
+  }
+}
+	</script>
+
+				
+				<div class="pic">
+					<img class="pic" src="./Ultra Corporation-1_files/pic.jpeg" width="100%">
+				</div>
+				<div class="pic2">
+					<img class="pic2" src="./Ultra Corporation-1_files/pic2.jpg" width="100%">
+				</div>
+				<div class="pic3">
+					<img class="pic3" src="./Ultra Corporation-1_files/pic3.jpeg" width="100%">
+				</div>
+				
+				<div class="ad1">
+					<img class="ad1" src="./Ultra Corporation-1_files/ad1.jpg" width="100%">	
+				</div>
+				<div>
+					<p>A corporate structure is perhaps the most advantageous way to start a business because the corporation exists as a separate entity. In general, a corporation has all the legal rights of an individual, except for the right to vote and certain other limitations. Corporations are given the right to exist by the state that issues their charter. If you incorporate in one state to take advantage of liberal corporate laws but do business in another state, you'll have to file for "qualification" in the state in which you wish to operate the business. There's usually a fee that must be paid to qualify to do business in a state.</p>
+
+
+					<p>Each year, the directors elect officers such as a president, secretary and treasurer to conduct the day-to-day affairs of the corporate business. There also may be additional officers such as vice presidents, if the directors so decide. Along with the articles of incorporation, the directors and shareholders usually adopt corporate bylaws that govern the powers and authority of the directors, officers and shareholders.</p>
+					<img src="./Ultra Corporation-1_files/corp1.png" width="100%">
+
+					<p>Even small, private, professional corporations, such as a legal or dental practice, need to adhere to the principles that govern a corporation. For instance, upon incorporation, common stock needs to be distributed to the shareholders and a board of directors elected. If there's only one person forming the corporation, that person is the sole shareholder of stock in the corporation and can elect himself or herself to the board of directors as well as any other individuals that person deems appropriate.</p>
+
+					<p>Corporations, if properly formed, capitalized and operated (including appropriate annual meetings of shareholders and directors) limit the liability of their shareholders. Even if the corporation is not successful or is held liable for damages in a lawsuit, the most a shareholder can lose is his or her investment in the stock. The shareholder's personal assets are not on the line for corporate liabilities.</p>
+
+					<img src="./Ultra Corporation-1_files/corp2.jpg" width="100%">
+					<p>If the corporation is small, the shareholders should prepare and sign a shareholders buy-sell agreement. This contract provides that if a shareholder dies or wants to sell his or her stock, it must first be offered to the surviving shareholders. It also may provide for a method to determine the fair price that should be paid for those shares. Such agreements are usually funded with life insurance to purchase the stock of deceased shareholders.</p>
+
+
+					<p>While some people feel that a corporation enhances the image of a small business, one disadvantage is the potential double taxation: The corporation must pay taxes on its net income, and shareholders must also pay taxes on any dividends received from the corporation. Business owners often increase their own salaries to reduce or wipe out corporate profits and thereby lower the possibility of having those profits taxed twice-once to the corporation and again to the shareholders upon receipt of dividends from the corporation.</p>
+
+				</div>
+
+				<div class="ad2">
+					<img class="ad2" src="./Ultra Corporation-1_files/ad2.png" width="100%">	
+				</div>
+				
+				<div class="social">
+					<p style="text-align: center;"><b>Social Media:</b><br><br>
+	 		<a href="https://www.instagram.com/" target="_blank"><img src="./Ultra Corporation-1_files/insta.png" width="40px"></a>
+	 		<a href="https://www.facebook.com/" target="_blank"><img src="./Ultra Corporation-1_files/images" width="40px"></a><br>
+	 				</p>
+				</div>
+				
+				<div id="footer" style="text-align: right;">
+					<p><i>Copyright © 2020 Claudia Dsilva</i> | Website by Claudia Dsilva </p>
+				</div>
+			
+		</div>
+	
+
+
+</body></html>
